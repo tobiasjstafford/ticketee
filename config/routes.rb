@@ -1,5 +1,8 @@
 Ticketee::Application.routes.draw do
-  resources :projects
+  get "tickets/new"
+  resources :projects do
+    resources :tickets
+  end
 
   root to: 'projects#index'
 
