@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Ticketee
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateProjects	db/migrate/20130617002142_create_projects.rb	/^class CreateProjects < ActiveRecord::Migration$/;"	c
+Project	app/models/project.rb	/^class Project < ActiveRecord::Base$/;"	c
+ProjectsController	app/controllers/projects_controller.rb	/^class ProjectsController < ApplicationController$/;"	c
+ProjectsHelper	app/helpers/projects_helper.rb	/^module ProjectsHelper$/;"	m
+Ticketee	config/application.rb	/^module Ticketee$/;"	m
+change	db/migrate/20130617002142_create_projects.rb	/^  def change$/;"	f	class:CreateProjects
+create	app/controllers/projects_controller.rb	/^  def create$/;"	f	class:ProjectsController
+edit	app/controllers/projects_controller.rb	/^  def edit$/;"	f	class:ProjectsController
+find_project	app/controllers/projects_controller.rb	/^  def find_project$/;"	f	class:ProjectsController
+index	app/controllers/projects_controller.rb	/^  def index$/;"	f	class:ProjectsController
+new	app/controllers/projects_controller.rb	/^  def new$/;"	f	class:ProjectsController
+project_params	app/controllers/projects_controller.rb	/^  def project_params$/;"	f	class:ProjectsController
+show	app/controllers/projects_controller.rb	/^  def show$/;"	f	class:ProjectsController
+title	app/helpers/application_helper.rb	/^  def title(*parts)$/;"	f	class:ApplicationHelper
+update	app/controllers/projects_controller.rb	/^  def update$/;"	f	class:ProjectsController
