@@ -54,3 +54,6 @@ group :test do
   gem 'factory_girl', '4.2.0'
 end
 
+# added per some random page on the 'net cuz I can't start a console...
+gem 'rb-readline', '~> 0.4.2'
+
