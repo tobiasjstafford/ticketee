@@ -8,7 +8,7 @@ feature 'Editing projects' do
 
     visit '/'
     click_link 'TextMate 2'
-    click_link 'Edit project'
+    click_link 'Edit Project'
   end
 
   scenario 'Updating a project' do
