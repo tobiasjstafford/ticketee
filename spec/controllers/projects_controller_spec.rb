@@ -2,6 +2,28 @@ require 'spec_helper'
 
 describe ProjectsController do
 
+  let(:user) { FactoryGirl.create(:user) }
+
+  context 'standard users' do
+    before do
+      sign_in(user)
+    end
+
+    { new: :get,
+      create: :post,
+      edit: :get,
+      update: :patch,
+      destroy: :delete }.each do |action, method|
+
+      it "can not access the #{action} action" do
+        send(method, action, id: FactoryGirl.create(:project))
+
+        expect(response).to redirect_to('/')
+        expect(flash[:alert]).to eql('You must be an admin to do that')
+      end
+    end
+  end
+
   it "should display an error if given an invalid id" do
     get :show, id: 'not-here'
     expect(response).to redirect_to(projects_path)

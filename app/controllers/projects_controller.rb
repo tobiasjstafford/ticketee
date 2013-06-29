@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
-  before_filter :find_project, only: [:show, :edit, :update, :destroy]
+  before_action :authorize_admin!, except: [:index, :show]
+  before_action :find_project, only: [:show, :edit, :update, :destroy]
 
   def index
     @projects = Project.all
@@ -50,5 +51,13 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   rescue ActiveRecord::RecordNotFound
     redirect_to projects_path, alert: 'The project you were looking for could not be found.'
+  end
+
+  def authorize_admin!
+    require_signin!
+
+    unless current_user.admin?
+      redirect_to root_url, alert: 'You must be an admin to do that'
+    end
   end
 end
