@@ -52,12 +52,4 @@ class ProjectsController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     redirect_to projects_path, alert: 'The project you were looking for could not be found.'
   end
-
-  def authorize_admin!
-    require_signin!
-
-    unless current_user.admin?
-      redirect_to root_url, alert: 'You must be an admin to do that'
-    end
-  end
 end
