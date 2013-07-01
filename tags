@@ -4,3 +4,87 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddAdminToUsers	db/migrate/20130628235818_add_admin_to_users.rb	/^class AddAdminToUsers < ActiveRecord::Migration$/;"	c
+AddUserToTickets	db/migrate/20130627022933_add_user_to_tickets.rb	/^class AddUserToTickets < ActiveRecord::Migration$/;"	c
+Admin	app/controllers/admin/base_controller.rb	/^class Admin::BaseController < ApplicationController$/;"	c
+Admin	app/controllers/admin/users_controller.rb	/^class Admin::UsersController < Admin::BaseController$/;"	c
+Admin	app/helpers/admin/users_helper.rb	/^module Admin::UsersHelper$/;"	m
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Ticketee
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+AuthHelpers	spec/support/authentication_helpers.rb	/^module AuthHelpers$/;"	m
+AuthenticationHelpers	spec/support/authentication_helpers.rb	/^module AuthenticationHelpers$/;"	m
+AuthorizationHelpers	spec/support/authorization_helpers.rb	/^module AuthorizationHelpers$/;"	m
+CapybaraHelpers	spec/support/capybara_helpers.rb	/^module CapybaraHelpers$/;"	m
+CreatePermissions	db/migrate/20130630233612_create_permissions.rb	/^class CreatePermissions < ActiveRecord::Migration$/;"	c
+CreateProjects	db/migrate/20130617002142_create_projects.rb	/^class CreateProjects < ActiveRecord::Migration$/;"	c
+CreateTickets	db/migrate/20130622230657_create_tickets.rb	/^class CreateTickets < ActiveRecord::Migration$/;"	c
+CreateUsers	db/migrate/20130624235123_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Permission	app/models/permission.rb	/^class Permission < ActiveRecord::Base$/;"	c
+Project	app/models/project.rb	/^class Project < ActiveRecord::Base$/;"	c
+ProjectsController	app/controllers/projects_controller.rb	/^class ProjectsController < ApplicationController$/;"	c
+ProjectsHelper	app/helpers/projects_helper.rb	/^module ProjectsHelper$/;"	m
+SessionsController	app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsHelper	app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+Ticket	app/models/ticket.rb	/^class Ticket < ActiveRecord::Base$/;"	c
+Ticketee	config/application.rb	/^module Ticketee$/;"	m
+TicketsController	app/controllers/tickets_controller.rb	/^class TicketsController < ApplicationController$/;"	c
+TicketsHelper	app/helpers/tickets_helper.rb	/^module TicketsHelper$/;"	m
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+admins_only	app/helpers/application_helper.rb	/^  def admins_only(&block) $/;"	f	class:ApplicationHelper
+assert_link_for	spec/support/capybara_helpers.rb	/^  def assert_link_for(text)$/;"	f	class:CapybaraHelpers
+assert_no_link_for	spec/support/capybara_helpers.rb	/^  def assert_no_link_for(text)$/;"	f	class:CapybaraHelpers
+authorize_admin!	app/controllers/application_controller.rb	/^  def authorize_admin!$/;"	f	class:ApplicationController
+change	db/migrate/20130617002142_create_projects.rb	/^  def change$/;"	f	class:CreateProjects
+change	db/migrate/20130622230657_create_tickets.rb	/^  def change$/;"	f	class:CreateTickets
+change	db/migrate/20130624235123_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	db/migrate/20130627022933_add_user_to_tickets.rb	/^  def change$/;"	f	class:AddUserToTickets
+change	db/migrate/20130628235818_add_admin_to_users.rb	/^  def change$/;"	f	class:AddAdminToUsers
+change	db/migrate/20130630233612_create_permissions.rb	/^  def change$/;"	f	class:CreatePermissions
+create	app/controllers/admin/users_controller.rb	/^  def create$/;"	f	class:Admin
+create	app/controllers/projects_controller.rb	/^  def create$/;"	f	class:ProjectsController
+create	app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	app/controllers/tickets_controller.rb	/^  def create$/;"	f	class:TicketsController
+create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+current_user	app/controllers/application_controller.rb	/^  def current_user$/;"	f	class:ApplicationController
+define_permission!	spec/support/authorization_helpers.rb	/^  def define_permission!(user, action, thing)$/;"	f	class:AuthorizationHelpers
+destroy	app/controllers/admin/users_controller.rb	/^  def destroy$/;"	f	class:Admin
+destroy	app/controllers/projects_controller.rb	/^  def destroy$/;"	f	class:ProjectsController
+destroy	app/controllers/tickets_controller.rb	/^  def destroy$/;"	f	class:TicketsController
+edit	app/controllers/admin/users_controller.rb	/^  def edit$/;"	f	class:Admin
+edit	app/controllers/projects_controller.rb	/^  def edit$/;"	f	class:ProjectsController
+edit	app/controllers/tickets_controller.rb	/^  def edit$/;"	f	class:TicketsController
+edit	app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
+find_project	app/controllers/projects_controller.rb	/^  def find_project$/;"	f	class:ProjectsController
+index	app/controllers/admin/base_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/users_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/projects_controller.rb	/^  def index$/;"	f	class:ProjectsController
+new	app/controllers/admin/users_controller.rb	/^  def new$/;"	f	class:Admin
+new	app/controllers/projects_controller.rb	/^  def new$/;"	f	class:ProjectsController
+new	app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	app/controllers/tickets_controller.rb	/^  def new$/;"	f	class:TicketsController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+project_params	app/controllers/projects_controller.rb	/^  def project_params$/;"	f	class:ProjectsController
+require_signin!	app/controllers/application_controller.rb	/^  def require_signin!$/;"	f	class:ApplicationController
+set_project	app/controllers/tickets_controller.rb	/^  def set_project$/;"	f	class:TicketsController
+set_ticket	app/controllers/tickets_controller.rb	/^  def set_ticket$/;"	f	class:TicketsController
+set_user	app/controllers/admin/users_controller.rb	/^  def set_user$/;"	f	class:Admin
+set_user	app/controllers/users_controller.rb	/^  def set_user$/;"	f	class:UsersController
+show	app/controllers/admin/users_controller.rb	/^  def show$/;"	f	class:Admin
+show	app/controllers/projects_controller.rb	/^  def show$/;"	f	class:ProjectsController
+show	app/controllers/tickets_controller.rb	/^  def show$/;"	f	class:TicketsController
+show	app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+sign_in	spec/support/authentication_helpers.rb	/^  def sign_in(user)$/;"	f	class:AuthHelpers
+sign_in_as!	spec/support/authentication_helpers.rb	/^  def sign_in_as!(user)$/;"	f	class:AuthenticationHelpers
+ticket_params	app/controllers/tickets_controller.rb	/^  def ticket_params$/;"	f	class:TicketsController
+title	app/helpers/application_helper.rb	/^  def title(*parts)$/;"	f	class:ApplicationHelper
+to_s	app/models/user.rb	/^  def to_s$/;"	f	class:User
+update	app/controllers/admin/users_controller.rb	/^  def update$/;"	f	class:Admin
+update	app/controllers/projects_controller.rb	/^  def update$/;"	f	class:ProjectsController
+update	app/controllers/tickets_controller.rb	/^  def update$/;"	f	class:TicketsController
+update	app/controllers/users_controller.rb	/^  def update$/;"	f	class:UsersController
+user_params	app/controllers/admin/users_controller.rb	/^  def user_params$/;"	f	class:Admin
+user_params	app/controllers/users_controller.rb	/^  def user_params$/;"	f	class:UsersController

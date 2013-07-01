@@ -22,14 +22,21 @@ describe ProjectsController do
         expect(flash[:alert]).to eql('You must be an admin to do that')
       end
     end
+
+    it 'can not access a project without permission' do
+      project = FactoryGirl.create(:project)
+      get :show, id: project
+
+      expect(response).to redirect_to projects_path
+      expect(flash[:alert]).to eql 'The project you were looking for could not be found'
+    end
+
+    it "should display an error if given an invalid id" do
+      get :show, id: 'not-here'
+      expect(response).to redirect_to(projects_path)
+
+      message = 'The project you were looking for could not be found'
+      expect(flash[:alert]).to eql(message)
+    end
   end
-
-  it "should display an error if given an invalid id" do
-    get :show, id: 'not-here'
-    expect(response).to redirect_to(projects_path)
-
-    message = 'The project you were looking for could not be found.'
-    expect(flash[:alert]).to eql(message)
-  end
-
 end
