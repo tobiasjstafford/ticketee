@@ -57,3 +57,5 @@ end
 # added per some random page on the 'net cuz I can't start a console...
 gem 'rb-readline', '~> 0.4.2'
 
+gem 'cancan', '1.6.9'
+
