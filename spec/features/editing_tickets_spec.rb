@@ -9,9 +9,9 @@ feature 'Editing tickets' do
     t
   end
 
-
   before do
     define_permission!(user, :view, project)
+    define_permission!(user, :edit_tickets, project)
     sign_in_as!(user)
 
     visit '/'
