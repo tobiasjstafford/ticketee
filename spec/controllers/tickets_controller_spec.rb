@@ -26,6 +26,11 @@ describe TicketsController do
         expect(flash[:alert]).to eql 'You cannot edit tickets for this project'
       end
 
+      def cannot_delete_tickets!
+        expect(response).to redirect_to project
+        expect(flash[:alert]).to eql 'You cannot delete tickets for this project'
+      end
+
       before do
         sign_in(user)
         define_permission!(user, :view, project)
@@ -50,6 +55,11 @@ describe TicketsController do
       it "cannot update tickets" do
         patch :update, project_id: project, id: ticket, ticket: ticket.attributes
         cannot_edit_tickets!
+      end
+
+      it "cannot delete tickets" do
+        delete :destroy, project_id: project, id: ticket
+        cannot_delete_tickets!
       end
     end
   end
